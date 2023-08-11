@@ -430,3 +430,59 @@ header p
   text-decoration: none;
   color: rgba(255, 255, 255, 0.7);
 }
+
+/* Collapsable drop down*/
+.universityInformationContainer
+{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pdfViewerContainer
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.collapsible 
+{
+  color: var(--seondary-colour);
+  background-color: var(--fourth-colour);
+  width: 100%;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  border: NONE;
+}
+
+.active, .collapsible:hover 
+{
+  background-color: var(--fourth-colour);
+}
+
+.content 
+{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  display: none;
+  overflow: hidden;
+  color: var(--seondary-colour);
+  background-color: var(--fourth-colour);
+  width: 99%;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  padding: 8px;
+}

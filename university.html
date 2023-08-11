@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>University</title>
+        <title>Portfolio | University</title>
         <link rel="stylesheet" href="style.css">
         <!-- External icons stylesheet for font awesome icons, available at: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -12,42 +12,58 @@
     <body>
         <!-- Start of container -->
         <div class="mainPageContent">
-            <!-- Navbar from: Arthor Prymov, available at https://codepen.io/apcept/pen/YbORWZ -->
-            <nav class="navbar">
-              <span class="navbar-toggle" id="js-navbar-toggle">
-                      <i class="fas fa-bars"></i>
-                  </span>
-              <a href="#" class="logo">Hinton</a>
-              <ul class="main-nav" id="js-menu">
-                <li>
-                  <a href="/home.html" class="nav-links">Home</a>
-                </li>
-                <li>
-                  <a href="/projects.html" class="nav-links">Work</a>
-                </li>
-                <li>
-                  <a href="/university.html" class="nav-links">Univeristy</a>
-                </li>
-                <li>
-                  <a href="/cv.html" class="nav-links">CV</a>
-                </li>
-              </ul>
-            </nav>
+
+          <nav class="navbar">
+            <span class="navbar-toggle" id="js-navbar-toggle">
+                    <i class="fas fa-bars"></i>
+                </span>
+            <a href="index.html" class="logo">Hinton</a>
+            <ul class="main-nav" id="js-menu">
+              <li>
+                <a href="/index.html" class="nav-links">Home</a>
+              </li>
+              <li>
+                <a href="/projects.html" class="nav-links">Work</a>
+              </li>
+              <li>
+                <a href="/university.html" class="nav-links">Univeristy</a>
+              </li>
+              <li>
+                <a href="/cv.html" class="nav-links">CV</a>
+              </li>
+            </ul>
+          </nav>
+
             <main>
-                <header class="university-page-header">
-                    <h1>University</h1>
-                </header>
+              <div class="universityInformationContainer">
+                <button type="button" class="collapsible"><h2>Working With Others In An Achedemic Setting</h2></button>
+                <div class="content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <button type="button" class="collapsible"><h2>Management & Organisations</h2></button>
+                <div class="content">
+                  <div class="pdfViewerContainer">
+                    <object class="cvViewer" data="/Assets/pdf/ManagementAndOrganisations.pdf" type="application/pdf" >
+                      <p>Unable to display PDF file. <a href="/Assets/pdf/ManagementAndOrganisations.pdf">Download</a> instead.</p>
+                    </object>
+                  </div>
+                </div>
+              </div>
             </main>
+
             <footer>
-                <div class="leftFooter">
-                    <p>Brandon Hinton</p>
-                    <p>bhintonwork5128@gmail.com</p>
-                </div>
-                <div class="rightFooter">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </div>
+              <div class="leftFooter">
+                <p>Email: Bhintonwork5128@gmail.com</p>
+              </div>
+              <div class="rightFooter">
+               <a class="linkedinAnchor" href="https://uk.linkedin.com/in/brandon-hinton-3927341b5?trk=people-guest_people_search-card">
+                 <i id="linkedInLogo" class="fa-brands fa-linkedin"></i>
+              </a>
+              </div>
             </footer>
+            
         </div>
         <!-- End of container -->
+        <script src="index.js"></script>
     </body>
 </html>
